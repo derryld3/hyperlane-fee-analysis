@@ -1,0 +1,110 @@
+Hyperlane CLI
+{"level":30,"time":1754885795563,"pid":80611,"msg":"Your CLI version: 12.3.0, latest version: 16.2.0"}
+Hyperlane Core deployment
+_________________________
+
+Deployment plan
+===============
+Transaction signer and owner of new contracts: 0xFeb8E9Daa0b52D3D0A4615098C3A2FB0c55F13ED
+Deploying core contracts to network: pruvtest
+┌────────────────────────┬────────────────────────────────────┐
+│ (index)                │ Values                             │
+├────────────────────────┼────────────────────────────────────┤
+│ Name                   │ 'pruvtest'                         │
+│ Display Name           │ 'pruvtest'                         │
+│ Chain ID               │ 7336                               │
+│ Domain ID              │ 7336                               │
+│ Protocol               │ 'ethereum'                         │
+│ JSON RPC URL           │ 'https://rpc.testnet.pruv.network' │
+│ Native Token: Symbol   │ 'PRUV'                             │
+│ Native Token: Name     │ 'Pruv'                             │
+│ Native Token: Decimals │ 18                                 │
+└────────────────────────┴────────────────────────────────────┘
+Note: There are several contracts required for each chain, but contracts in your provided registries will be skipped.
+Running pre-flight checks for chains...
+✅ pruvtest signer is valid
+✅ Chains are valid
+✅ Balances are sufficient
+🚀 All systems ready, captain! Beginning deployment...
+Deploying to pruvtest from https://explorer.testnet.pruv.network/address/0xFeb8E9Daa0b52D3D0A4615098C3A2FB0c55F13ED
+Deploying staticMerkleRootMultisigIsmFactory on pruvtest with constructor args ()...
+Pending https://explorer.testnet.pruv.network/tx/0xb683dfeaf98a7d937b75389f4a3f3d3d6b706204001e7686c4139652aa4d216e (waiting 1 blocks for confirmation)
+Deploying staticMessageIdMultisigIsmFactory on pruvtest with constructor args ()...
+Pending https://explorer.testnet.pruv.network/tx/0x04fa4e28b71e6207d5c43843563cbaecfc7239f1e8b507ee27e7f3330aac4691 (waiting 1 blocks for confirmation)
+Deploying staticAggregationIsmFactory on pruvtest with constructor args ()...
+Pending https://explorer.testnet.pruv.network/tx/0x9593a303b1783ddaae823597fd2808c38192e22e9a569b9a514df9c3d090afeb (waiting 1 blocks for confirmation)
+Deploying staticAggregationHookFactory on pruvtest with constructor args ()...
+Pending https://explorer.testnet.pruv.network/tx/0x4714ccbc0ab9bb9357505a850b575ba88c4666330dd3b578b306f3a0e4504777 (waiting 1 blocks for confirmation)
+Deploying domainRoutingIsmFactory on pruvtest with constructor args ()...
+Pending https://explorer.testnet.pruv.network/tx/0x791f961511002f383a06b59ff48f36d6161e45402927de377a03c67c0d16f321 (waiting 1 blocks for confirmation)
+Deploying staticMerkleRootWeightedMultisigIsmFactory on pruvtest with constructor args ()...
+Pending https://explorer.testnet.pruv.network/tx/0x77547ff0bfba5feb1db19bbcce95b7b8ce3eba1d414e6d226f71862e9d876b44 (waiting 1 blocks for confirmation)
+Deploying staticMessageIdWeightedMultisigIsmFactory on pruvtest with constructor args ()...
+Pending https://explorer.testnet.pruv.network/tx/0x645b6f79339e4f8575021cf0397f9df085cf3412866085c4773061fd1eed1cf4 (waiting 1 blocks for confirmation)
+Successfully deployed contracts on pruvtest
+Deploying proxyAdmin on pruvtest with constructor args ()...
+Pending https://explorer.testnet.pruv.network/tx/0xa3dc4e2a4149b7a288193eab66348173589518b55e989adbc1fe2101f54ab6a5 (waiting 1 blocks for confirmation)
+Deploying mailbox on pruvtest with constructor args (7336)...
+Pending https://explorer.testnet.pruv.network/tx/0x367353abc98cda75b99756084e534162fb3aa89a51d7f20b1c7f083b876ef9ee (waiting 1 blocks for confirmation)
+Deploying TransparentUpgradeableProxy on pruvtest with constructor args (0x330694045E152B90c36A7F9DdEBaDb5739a9FE8B, 0x5E65F6174e788472F62C293770f303C9611f5A51, 0x)...
+Pending https://explorer.testnet.pruv.network/tx/0xedffae209407b20629569468ac4f32513a8afce957416f26dbb97a008255721f (waiting 1 blocks for confirmation)
+Pending https://explorer.testnet.pruv.network/tx/0xe327be3a61ee8d45ff0a2d818365725b2279c3c67adc59d30add65e69e648ba8 (waiting 1 blocks for confirmation)
+Deploying merkleTreeHook on pruvtest with constructor args (0x1E862431A392d25bEE2dF0B66a4242e528BD1b63)...
+Pending https://explorer.testnet.pruv.network/tx/0xbfb27c3be23defb0b0c9ef1cd9441b7d113a670b37fdcfb6c543e6ab7054fa5f (waiting 1 blocks for confirmation)
+Deploying storageGasOracle on pruvtest with constructor args ()...
+Pending https://explorer.testnet.pruv.network/tx/0x9455f4279b0800ccc6567b4bd1bfb531e5b804a3646ae8fe8dc864d31d4c6334 (waiting 1 blocks for confirmation)
+Configuring gas oracle from pruvtest...
+pruvtest -> arbitrumsepolia: Exchange rate: 1.2 (new), Gas price: 0.1 gwei (new), Product diff: new
+pruvtest -> arbitrumsepolia: 125000 remote gas cost: 0.000015
+pruvtest -> sepolia: Exchange rate: 1.2 (new), Gas price: 0.01 gwei (new), Product diff: new
+pruvtest -> sepolia: 125000 remote gas cost: 0.0000015
+Skipping gas oracle pruvtest -> seaseedtest. Expected if the remote is a non-EVM chain.
+Pending https://explorer.testnet.pruv.network/tx/0x40ca128593c9a8b1d694079ac8d7861f294c6cdf84ee1e0d4b1e2b3acfe425a8 (waiting 1 blocks for confirmation)
+Deploying interchainGasPaymaster on pruvtest with constructor args ()...
+Pending https://explorer.testnet.pruv.network/tx/0xf071d5ca87ab585e8bc5d021fa28b2ff172b71524a309847985cfe7feb9e464c (waiting 1 blocks for confirmation)
+Pending https://explorer.testnet.pruv.network/tx/0x4635a5e82197d04d4331d2281d623c4865fc3723b7eaea14b46e5965c3dc617c (waiting 1 blocks for confirmation)
+Deploying TransparentUpgradeableProxy on pruvtest with constructor args (0x0e23cA500F61a85d0b864B2eBAc964fF360636d8, 0x5E65F6174e788472F62C293770f303C9611f5A51, 0x485cc955000000000000000000000000feb8e9daa0b52d3d0a4615098c3a2fb0c55f13ed00000000000000000000000088b90d085daf288c295bd3a6057b086bea1c95e9)...
+Pending https://explorer.testnet.pruv.network/tx/0x13b78d3943e5c8fb4351de7a161c7fa290aa6f958d2cfe10545b2035d6389bfd (waiting 1 blocks for confirmation)
+Skipping overhead pruvtest -> seaseedtest. Expected if the remote is a non-EVM chain.
+Pending https://explorer.testnet.pruv.network/tx/0xac3cd396c862f656d1d948a99a9c35217e1e08870bfe431e6cf8a4b8f1a5b2d0 (waiting 1 blocks for confirmation)
+Pending https://explorer.testnet.pruv.network/tx/0x563e6b32baf7bac3d18cef84553bc15ee0990593fb2ea0e3e190dc1f6126608e (waiting 1 blocks for confirmation)
+Pending https://explorer.testnet.pruv.network/tx/0xcc24f9c5177186a71cbfc43bd4bbca9bc6492f47f6891e18a12b47cd1e84b469 (waiting 1 blocks for confirmation)
+Pending https://explorer.testnet.pruv.network/tx/0x18fe504600420ef62c4d9e21355ef8bb437cd447fe0360177c3068707f0ff880 (waiting 1 blocks for confirmation)
+Pending https://explorer.testnet.pruv.network/tx/0xd0641878f70e4cdac9205a5e98c246a72c715d9cd4f9fa71c83866dd7e270033 (waiting 1 blocks for confirmation)
+Deploying interchainAccountIsm on pruvtest with constructor args (0x1E862431A392d25bEE2dF0B66a4242e528BD1b63)...
+Pending https://explorer.testnet.pruv.network/tx/0xf4dfa26323c4de3c5403dbf27fc640db48c86a27ae3be0a2cfaba4bc9908b23d (waiting 1 blocks for confirmation)
+Deploying proxyAdmin on pruvtest with constructor args ()...
+Pending https://explorer.testnet.pruv.network/tx/0xe12dbabc976ac64e9aabcfb532ecba6a0e08b8260ca8b722a563b4a4c5bfc621 (waiting 1 blocks for confirmation)
+Deploying interchainAccountRouter on pruvtest with constructor args (0x1E862431A392d25bEE2dF0B66a4242e528BD1b63)...
+Pending https://explorer.testnet.pruv.network/tx/0x10e60891c02625224c1c67a2cf257ab6f392f0387dbf138f9547aad41273343b (waiting 1 blocks for confirmation)
+Pending https://explorer.testnet.pruv.network/tx/0xcd8151f2f9e0362e4fb5ba726b4643335e9cb52be959b652d31fbe00f9586db3 (waiting 1 blocks for confirmation)
+Deploying TransparentUpgradeableProxy on pruvtest with constructor args (0xa1f15F16D4AF034f0c5d3C4Cc5D77CBF23a1ec80, 0x800aA7Bd131F13EFe5e11DB2BDDBc1b9e8355A83, 0xc0c53b8b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000002c614599c76b335014583a4d64a75b2061c8a658000000000000000000000000feb8e9daa0b52d3d0a4615098c3a2fb0c55f13ed)...
+Pending https://explorer.testnet.pruv.network/tx/0x25e9fceef63b83d0d3a5891f754e2974cc4a1bfabf89d2267b0d1cc38ed58199 (waiting 1 blocks for confirmation)
+Deploying validatorAnnounce on pruvtest with constructor args (0x1E862431A392d25bEE2dF0B66a4242e528BD1b63)...
+Pending https://explorer.testnet.pruv.network/tx/0x68786cce2e79eef7a2e7092aaac23283429c3cab3050ddc81937f9941673d70d (waiting 1 blocks for confirmation)
+Deploying testRecipient on pruvtest with constructor args ()...
+Pending https://explorer.testnet.pruv.network/tx/0x7e2b5f62fd34a2c522629593995972bb19a20339053403cf7ed1df8515dfafd4 (waiting 1 blocks for confirmation)
+Sent tx 0x4fddaf27e1ccfddca236b8adfcb04459a5d2bd6741311d256d84fcc07e3fcb1c
+Pending https://explorer.testnet.pruv.network/tx/0x4fddaf27e1ccfddca236b8adfcb04459a5d2bd6741311d256d84fcc07e3fcb1c (waiting 1 blocks for confirmation)
+⛽️ Gas Usage Statistics
+	- Gas required for core deploy on pruvtest: 0.0 PRUV
+Skipping updating chain pruvtest at github registry
+Now updating chain pruvtest at filesystem registry at /Users/sr.productmanager/.hyperlane
+Done updating chain pruvtest at filesystem registry
+✅ Core contract deployments complete:
+
+    staticMerkleRootMultisigIsmFactory: "0xceEA2fe33Ca03E508F2EEdB8c4A86BedBa44996d"
+    staticMessageIdMultisigIsmFactory: "0xB349aAC67C2F9735B13E050419aF33Af810749F2"
+    staticAggregationIsmFactory: "0x26396eb3e8ADd0E4bf26a92F26d4282090557AaD"
+    staticAggregationHookFactory: "0xEd9605B043a6a9C15ab3D172301bd8c7c813C5df"
+    domainRoutingIsmFactory: "0xE8805472980E3f42c4D1b8707832DF60C7D02Ff9"
+    staticMerkleRootWeightedMultisigIsmFactory: "0x4F2483934ae27a546c378eC4d7f0728B7ea4D9Df"
+    staticMessageIdWeightedMultisigIsmFactory: "0xa12F87EF50C5D053E1EcEd9a36afE5A13DFFfdA8"
+    proxyAdmin: "0x5E65F6174e788472F62C293770f303C9611f5A51"
+    mailbox: "0x1E862431A392d25bEE2dF0B66a4242e528BD1b63"
+    interchainAccountRouter: "0xCF5019B2B5033Ce61bCc6E2881F76c945c6bcFB4"
+    interchainAccountIsm: "0x2c614599C76B335014583a4D64A75b2061c8a658"
+    validatorAnnounce: "0xd9a145E03f8B2C0bC9281ceBCF49C9e7e8583c21"
+    testRecipient: "0x7BC066ACA9cC9943a48aC7Ee7e3483fA0631EB1A"
+    merkleTreeHook: "0xf1E04E37FDbF6aE21045330A6f45975153b3012f"
+    interchainGasPaymaster: "0x047CF3Ff38e8bB0068Fd3724A9A7103665662b4F"

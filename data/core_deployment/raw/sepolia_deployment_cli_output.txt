@@ -1,0 +1,110 @@
+Hyperlane CLI
+{"level":30,"time":1754887631358,"pid":2088,"msg":"Your CLI version: 12.3.0, latest version: 16.2.0"}
+Hyperlane Core deployment
+_________________________
+
+Deployment plan
+===============
+Transaction signer and owner of new contracts: 0xFeb8E9Daa0b52D3D0A4615098C3A2FB0c55F13ED
+Deploying core contracts to network: sepolia
+┌────────────────────────┬───────────────────────────────────────────┐
+│ (index)                │ Values                                    │
+├────────────────────────┼───────────────────────────────────────────┤
+│ Name                   │ 'sepolia'                                 │
+│ Display Name           │ 'Sepolia'                                 │
+│ Chain ID               │ 11155111                                  │
+│ Domain ID              │ 11155111                                  │
+│ Protocol               │ 'ethereum'                                │
+│ JSON RPC URL           │ 'https://ethereum-sepolia.publicnode.com' │
+│ Native Token: Symbol   │ 'ETH'                                     │
+│ Native Token: Name     │ 'Ether'                                   │
+│ Native Token: Decimals │ 18                                        │
+└────────────────────────┴───────────────────────────────────────────┘
+Note: There are several contracts required for each chain, but contracts in your provided registries will be skipped.
+Running pre-flight checks for chains...
+✅ Sepolia signer is valid
+✅ Chains are valid
+✅ Balances are sufficient
+🚀 All systems ready, captain! Beginning deployment...
+Deploying to sepolia from https://sepolia.etherscan.io/address/0xFeb8E9Daa0b52D3D0A4615098C3A2FB0c55F13ED
+Deploying staticMerkleRootMultisigIsmFactory on sepolia with constructor args ()...
+Pending https://sepolia.etherscan.io/tx/0x13275bf5ce1c0b0ff9042feeb04b7aef9c648c87f097ac3f16a6c3555311d669 (waiting 1 blocks for confirmation)
+Deploying staticMessageIdMultisigIsmFactory on sepolia with constructor args ()...
+Pending https://sepolia.etherscan.io/tx/0x3c560ed4965ecedbc98623c62e53ae5049669fcda27cd1e94f50ad9e9ec5a831 (waiting 1 blocks for confirmation)
+Deploying staticAggregationIsmFactory on sepolia with constructor args ()...
+Pending https://sepolia.etherscan.io/tx/0x4c9ffb1d8056a78123cdfca171af78c2a384a27dcfb4c0f18e4229f7ac6adfdd (waiting 1 blocks for confirmation)
+Deploying staticAggregationHookFactory on sepolia with constructor args ()...
+Pending https://sepolia.etherscan.io/tx/0x8373fa3193efa82fae1fb83c5f6c2bc52b8715d82f89d1844ca61f896527f559 (waiting 1 blocks for confirmation)
+Deploying domainRoutingIsmFactory on sepolia with constructor args ()...
+Pending https://sepolia.etherscan.io/tx/0xf302792d975065739d5668039ad33dc2fac1a402cfb3ebe035b00a2e339527de (waiting 1 blocks for confirmation)
+Deploying staticMerkleRootWeightedMultisigIsmFactory on sepolia with constructor args ()...
+Pending https://sepolia.etherscan.io/tx/0xbf196f4f2a19c2c3a2691351e4cde4a9cc107f7d60d89e587043c9b95607f93e (waiting 1 blocks for confirmation)
+Deploying staticMessageIdWeightedMultisigIsmFactory on sepolia with constructor args ()...
+Pending https://sepolia.etherscan.io/tx/0x7b356b6c8e101653997897b26758031b3bca56cca5def6ef5e3954fcd454cea3 (waiting 1 blocks for confirmation)
+Successfully deployed contracts on sepolia
+Deploying proxyAdmin on sepolia with constructor args ()...
+Pending https://sepolia.etherscan.io/tx/0x6d058fc6003db97ea26cffdd06ce7b8107256b1a3e0f1ec2e61e4c47b3849697 (waiting 1 blocks for confirmation)
+Deploying mailbox on sepolia with constructor args (11155111)...
+Pending https://sepolia.etherscan.io/tx/0x7a581f39d4622fc1bb51629354dc4729dda99c9085d3e0d08b073858c35f8da3 (waiting 1 blocks for confirmation)
+Deploying TransparentUpgradeableProxy on sepolia with constructor args (0xA74e2d72787b4512213d56eC90522541296dE405, 0xdE005dE73C46c1904DAf06DcC319839BdCA94dEC, 0x)...
+Pending https://sepolia.etherscan.io/tx/0xc828b8443f1406ccf228b3eaaea51012fab91c0b2112c1efc880467c9d786363 (waiting 1 blocks for confirmation)
+Pending https://sepolia.etherscan.io/tx/0xa5255cad1d1a4376bb7571236dc96f8f61a61d3632058c32afcb6d1f9cccc0c6 (waiting 1 blocks for confirmation)
+Deploying merkleTreeHook on sepolia with constructor args (0x497A377beF16E3b0cB168182077C324071D4fe98)...
+Pending https://sepolia.etherscan.io/tx/0x540e698cf21a1b6e8548a0a06f7a7151a4e532fc5f8713f20f125974faf1a6c4 (waiting 1 blocks for confirmation)
+Deploying storageGasOracle on sepolia with constructor args ()...
+Pending https://sepolia.etherscan.io/tx/0xab43c9266b1314eeea5a0381deafba3799ed4145750a3881d3f4ca3ed5356bf6 (waiting 1 blocks for confirmation)
+Configuring gas oracle from sepolia...
+sepolia -> arbitrumsepolia: Exchange rate: 1.2 (new), Gas price: 0.1 gwei (new), Product diff: new
+sepolia -> arbitrumsepolia: 125000 remote gas cost: 0.000015
+sepolia -> sepolia: Exchange rate: 1.2 (new), Gas price: 0.01 gwei (new), Product diff: new
+sepolia -> sepolia: 125000 remote gas cost: 0.0000015
+Skipping gas oracle sepolia -> seaseedtest. Expected if the remote is a non-EVM chain.
+Pending https://sepolia.etherscan.io/tx/0xaa39907cdb266baf98bb64feb24797067161d0f4bfc7431e9def1b1b47ac7c7d (waiting 1 blocks for confirmation)
+Deploying interchainGasPaymaster on sepolia with constructor args ()...
+Pending https://sepolia.etherscan.io/tx/0xb4df0d6ed547a8f31c6ce1db8057358c371028c3ad63f45116d384ea17409518 (waiting 1 blocks for confirmation)
+Pending https://sepolia.etherscan.io/tx/0x5ed7ac9d4b146bc27a4bbf0c2a704d87a6a81309d821ee34e676bf3c33af34c0 (waiting 1 blocks for confirmation)
+Deploying TransparentUpgradeableProxy on sepolia with constructor args (0xb6FE7fDB92C767373F9f0FbD327A1396a7A688fa, 0xdE005dE73C46c1904DAf06DcC319839BdCA94dEC, 0x485cc955000000000000000000000000feb8e9daa0b52d3d0a4615098c3a2fb0c55f13ed00000000000000000000000088b90d085daf288c295bd3a6057b086bea1c95e9)...
+Pending https://sepolia.etherscan.io/tx/0x437a2a2e32ed16415371f584cd02c6d6385a575d738110933fc86b0e89d4aafd (waiting 1 blocks for confirmation)
+Skipping overhead sepolia -> seaseedtest. Expected if the remote is a non-EVM chain.
+Pending https://sepolia.etherscan.io/tx/0x24405b788a1fd1027ec8186e58f7919bd3716c3a45b4dc44b5f51331b2e2d53d (waiting 1 blocks for confirmation)
+Pending https://sepolia.etherscan.io/tx/0x75899668f59cc4dc5437ab0ecbae096a5b4f6f043fef9dc42c70837da0247757 (waiting 1 blocks for confirmation)
+Pending https://sepolia.etherscan.io/tx/0x29e7a881119fb3084edd72bea85fb0c281158b52fd87a1b3bea562b8463dd677 (waiting 1 blocks for confirmation)
+Pending https://sepolia.etherscan.io/tx/0x4a1f38a0868b9ff3a4f440f5d63d5707825eef85cdda02368b3d6f5002cc7a5e (waiting 1 blocks for confirmation)
+Pending https://sepolia.etherscan.io/tx/0xd5f9cf69457245d6281d6f26c97944c62450051703543630635ff45d09d421a6 (waiting 1 blocks for confirmation)
+Deploying interchainAccountIsm on sepolia with constructor args (0x497A377beF16E3b0cB168182077C324071D4fe98)...
+Pending https://sepolia.etherscan.io/tx/0x81b6f4a133ae412346bd3e3a0f122d6281f50c3da8d522c45afcb46472a6830f (waiting 1 blocks for confirmation)
+Deploying proxyAdmin on sepolia with constructor args ()...
+Pending https://sepolia.etherscan.io/tx/0x49747ef4685f306a9faeceeb2ed0893c9a613a5f7d64611b4da6001cd387c3ae (waiting 1 blocks for confirmation)
+Deploying interchainAccountRouter on sepolia with constructor args (0x497A377beF16E3b0cB168182077C324071D4fe98)...
+Pending https://sepolia.etherscan.io/tx/0x7e692ece4b7751489e17fd554c27b039224148a6d656e66fbf603e4c3945cd89 (waiting 1 blocks for confirmation)
+Pending https://sepolia.etherscan.io/tx/0x820f277eb0b9b71a36834bfde453e5423fc76f379c80040abd5bb86fe1b8be2a (waiting 1 blocks for confirmation)
+Deploying TransparentUpgradeableProxy on sepolia with constructor args (0x2217B95274C80286933463D84fDA6fa96b0D5953, 0x3299C63A274075a76D4571647409A4Bd9a42093b, 0xc0c53b8b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000446b7a985132711f046e5d78bd14370d8a10ab67000000000000000000000000feb8e9daa0b52d3d0a4615098c3a2fb0c55f13ed)...
+Pending https://sepolia.etherscan.io/tx/0xf108da760db5bd6a13466d93d7e3109056f9633c8e155fa81a7172227a932ee1 (waiting 1 blocks for confirmation)
+Deploying validatorAnnounce on sepolia with constructor args (0x497A377beF16E3b0cB168182077C324071D4fe98)...
+Pending https://sepolia.etherscan.io/tx/0x9263c99fd82cbd8b3b6e0c8cc93545422d4eac1727b622e8ee7e6c62fa1ee3d7 (waiting 1 blocks for confirmation)
+Deploying testRecipient on sepolia with constructor args ()...
+Pending https://sepolia.etherscan.io/tx/0xb1cbc2529542c5df7838eb30e8d14f4a26bc5b324b1f30a03430dbc116b0c1ca (waiting 1 blocks for confirmation)
+Sent tx 0x336fdf79217f6687dee26d6a6f37a22b374dd74e45c5b403f116314c9f979918
+Pending https://sepolia.etherscan.io/tx/0x336fdf79217f6687dee26d6a6f37a22b374dd74e45c5b403f116314c9f979918 (waiting 1 blocks for confirmation)
+⛽️ Gas Usage Statistics
+	- Gas required for core deploy on sepolia: 0.000027226196900987 ETH
+Skipping updating chain sepolia at github registry
+Now updating chain sepolia at filesystem registry at /Users/sr.productmanager/.hyperlane
+Done updating chain sepolia at filesystem registry
+✅ Core contract deployments complete:
+
+    staticMerkleRootMultisigIsmFactory: "0x61b7a5aE609ADF48fc1d088e7804251a08A34D00"
+    staticMessageIdMultisigIsmFactory: "0x6fEf7f752dD964Ca60B251726EE0Abd860fCBF95"
+    staticAggregationIsmFactory: "0xaD016eE7b41eeEcC78406aE010f01b2e994BCd18"
+    staticAggregationHookFactory: "0xbD9d7C2310Fa298E30283C1fF879e9A258Bb74ba"
+    domainRoutingIsmFactory: "0xd437e827b60685D9950d881BbD5d7A966f8A2cAE"
+    staticMerkleRootWeightedMultisigIsmFactory: "0x1B4f559E49f974391E17e41D65CdF37cFbb9a639"
+    staticMessageIdWeightedMultisigIsmFactory: "0x881388EeCE207D4333115dEA81Ff4D9928D64A7E"
+    proxyAdmin: "0xdE005dE73C46c1904DAf06DcC319839BdCA94dEC"
+    mailbox: "0x497A377beF16E3b0cB168182077C324071D4fe98"
+    interchainAccountRouter: "0x28d05ea18A0dCdd403dCE40dBdeD6E3E89a0df02"
+    interchainAccountIsm: "0x446B7A985132711F046e5D78bD14370d8A10AB67"
+    validatorAnnounce: "0x8fB60d42d02B0d5582c0f2D9c6765d24CD332c1a"
+    testRecipient: "0x170896911c48458346A821427EF8cF4b74a53076"
+    merkleTreeHook: "0x3F0f1a7D6De591b4e446dB2CFCc998a90768F707"
+    interchainGasPaymaster: "0xAb64eb3beFC76c144bC2023741F9fc4c3e5B9ec3"

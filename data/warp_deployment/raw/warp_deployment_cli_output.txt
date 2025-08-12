@@ -1,0 +1,141 @@
+Hyperlane CLI
+{"level":30,"time":1754972649686,"pid":70891,"msg":"Your CLI version: 12.3.0, latest version: 16.2.0"}
+Using warp route deployment config at ./configs/warp-route-deployment.yaml
+Hyperlane Warp Route Deployment
+_______________________________
+Using warp route deployment config at ./configs/warp-route-deployment.yaml
+
+Warp Route Deployment Plan
+==========================
+📋 Token Standard: ERC20
+📋 Warp Route Config:
+┌─────────────────┬───────┬──────────────────┬──────────────────────────────────────────────┬──────────────────────────────────────────────┬───────────────────────┐
+│ (index)         │ NFT?  │ Type             │ Owner                                        │ Mailbox                                      │ ISM Config(s)         │
+├─────────────────┼───────┼──────────────────┼──────────────────────────────────────────────┼──────────────────────────────────────────────┼───────────────────────┤
+│ pruvtest        │ false │ 'collateralFiat' │ '0x88b90d085dAf288C295bD3A6057B086BEA1C95e9' │ '0x1E862431A392d25bEE2dF0B66a4242e528BD1b63' │ 'See table(s) below.' │
+│ sepolia         │ false │ 'collateral'     │ '0x88b90d085dAf288C295bD3A6057B086BEA1C95e9' │ '0x497A377beF16E3b0cB168182077C324071D4fe98' │ 'See table(s) below.' │
+│ arbitrumsepolia │ false │ 'collateral'     │ '0x88b90d085dAf288C295bD3A6057B086BEA1C95e9' │ '0xD1D8C294e2e2d6f7Bd03Fa3503BE84d939E0a85f' │ 'See table(s) below.' │
+└─────────────────┴───────┴──────────────────┴──────────────────────────────────────────────┴──────────────────────────────────────────────┴───────────────────────┘
+📋 pruvtest ISM Config(s):
+┌─────────────────┬──────────────────────────────────────────────┐
+│ (index)         │ Values                                       │
+├─────────────────┼──────────────────────────────────────────────┤
+│ Type            │ 'defaultFallbackRoutingIsm'                  │
+│ Owner           │ '0x88b90d085dAf288C295bD3A6057B086BEA1C95e9' │
+│ Owner Overrides │ 'Undefined'                                  │
+│ Domains         │ 'See warp config for domain specification.'  │
+└─────────────────┴──────────────────────────────────────────────┘
+📋 sepolia ISM Config(s):
+┌─────────────────┬──────────────────────────────────────────────┐
+│ (index)         │ Values                                       │
+├─────────────────┼──────────────────────────────────────────────┤
+│ Type            │ 'defaultFallbackRoutingIsm'                  │
+│ Owner           │ '0x88b90d085dAf288C295bD3A6057B086BEA1C95e9' │
+│ Owner Overrides │ 'Undefined'                                  │
+│ Domains         │ 'See warp config for domain specification.'  │
+└─────────────────┴──────────────────────────────────────────────┘
+📋 arbitrumsepolia ISM Config(s):
+┌─────────────────┬──────────────────────────────────────────────┐
+│ (index)         │ Values                                       │
+├─────────────────┼──────────────────────────────────────────────┤
+│ Type            │ 'defaultFallbackRoutingIsm'                  │
+│ Owner           │ '0x88b90d085dAf288C295bD3A6057B086BEA1C95e9' │
+│ Owner Overrides │ 'Undefined'                                  │
+│ Domains         │ 'See warp config for domain specification.'  │
+└─────────────────┴──────────────────────────────────────────────┘
+Running pre-flight checks for chains...
+✅ pruvtest signer is valid
+✅ Sepolia signer is valid
+✅ Arbitrum Sepolia signer is valid
+✅ Chains are valid
+✅ Balances are sufficient
+🚀 All systems ready, captain! Beginning deployment...
+Loading registry factory addresses for pruvtest...
+Creating defaultFallbackRoutingIsm ISM for token on pruvtest chain...
+Finished creating defaultFallbackRoutingIsm ISM for token on pruvtest chain.
+Loading registry factory addresses for sepolia...
+Creating defaultFallbackRoutingIsm ISM for token on sepolia chain...
+Finished creating defaultFallbackRoutingIsm ISM for token on sepolia chain.
+Loading registry factory addresses for arbitrumsepolia...
+Creating defaultFallbackRoutingIsm ISM for token on arbitrumsepolia chain...
+Finished creating defaultFallbackRoutingIsm ISM for token on arbitrumsepolia chain.
+Pending https://explorer.testnet.pruv.network/tx/0x3e189ce02396edb9c71d021003018a8e3f5eac5e882055e0708a4b3c04a5f716 (waiting 1 blocks for confirmation)
+Pending https://sepolia.arbiscan.io/tx/0x9e57c1cc56227caf8c2c4832d2d6044943e1ecc7c98fdda90924f206a6daa3f9 (waiting 1 blocks for confirmation)
+Pending https://sepolia.etherscan.io/tx/0xa560fad614b28c0071d6a2be1791fc38f54ad70f1f1dd584278df1d69b69d059 (waiting 1 blocks for confirmation)
+Pending https://explorer.testnet.pruv.network/tx/0xe03b1f281c5466f05ac816b9052a412a102dd99ae63de865b134c1dcfb24cc2f (waiting 1 blocks for confirmation)
+Pending https://sepolia.arbiscan.io/tx/0xac56e7fe7824616d1f1fb4cfe2c072d6011b39b88008dc045e29a5a44ea33c9b (waiting 1 blocks for confirmation)
+Config Hook is empty, skipping deployment.
+Config Hook is empty, skipping deployment.
+Pending https://sepolia.etherscan.io/tx/0xa739b0084202e566ca92ffe7e65a80116ac6f92e42974146321d2e654abd3d21 (waiting 1 blocks for confirmation)
+Config Hook is empty, skipping deployment.
+Deploying to pruvtest from https://explorer.testnet.pruv.network/address/0xFeb8E9Daa0b52D3D0A4615098C3A2FB0c55F13ED
+Deploying HypFiatToken on pruvtest with constructor args (0xeCacC484026a02022565496E088CA0581cC36373, 1, 0x1E862431A392d25bEE2dF0B66a4242e528BD1b63)...
+Pending https://explorer.testnet.pruv.network/tx/0x0c05f862abf582a4ed2283d62e58049209971ab1180b0a642d569b00f7e3fc09 (waiting 1 blocks for confirmation)
+Pending https://explorer.testnet.pruv.network/tx/0x69b1a07e11b260817fff5ec6022e523ab2ff7d15535decca1fac99f484880d3b (waiting 1 blocks for confirmation)
+Deploying TransparentUpgradeableProxy on pruvtest with constructor args (0xC15Ec99A2494a3fF98d082cfA78e4A4E2c8A6aA5, 0x823B2406490752fB50e1CABa809Bf643CD233553, 0xc0c53b8b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a5c013e3831d832f6ba5948cd53c3c398b51dadb000000000000000000000000feb8e9daa0b52d3d0a4615098c3a2fb0c55f13ed)...
+Pending https://explorer.testnet.pruv.network/tx/0x9f2de642f0a09704ad3770ee520c1b570d60e8cc2014fed35d42e11cd0d3bb54 (waiting 1 blocks for confirmation)
+Successfully deployed contracts on pruvtest
+Deploying to sepolia from https://sepolia.etherscan.io/address/0xFeb8E9Daa0b52D3D0A4615098C3A2FB0c55F13ED
+Deploying HypERC20Collateral on sepolia with constructor args (0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238, 1, 0x497A377beF16E3b0cB168182077C324071D4fe98)...
+Pending https://sepolia.etherscan.io/tx/0x9cbab903f59113ab0d168ad35f8e853150d05806d1d0662b11e01120edc302a5 (waiting 1 blocks for confirmation)
+Pending https://sepolia.etherscan.io/tx/0x0ee80a60df91fb4559afd3f714ab48541e4763042f32c6d213fb180fbec16475 (waiting 1 blocks for confirmation)
+Deploying TransparentUpgradeableProxy on sepolia with constructor args (0x470eA1b518cf6627083b4D3C5573D634e9B94527, 0x3ab41b17E9C0072571357d774fAEF87D705CD545, 0xc0c53b8b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000003f91fb571dda262f6a6ca938013748a440777703000000000000000000000000feb8e9daa0b52d3d0a4615098c3a2fb0c55f13ed)...
+Pending https://sepolia.etherscan.io/tx/0x7448b7d7cb3d64da2751d06224dbebd4394cc19b8bddecc0dc64943f74e31b56 (waiting 1 blocks for confirmation)
+Successfully deployed contracts on sepolia
+Deploying to arbitrumsepolia from https://sepolia.arbiscan.io/address/0xFeb8E9Daa0b52D3D0A4615098C3A2FB0c55F13ED
+Deploying HypERC20Collateral on arbitrumsepolia with constructor args (0x75faf114eafb1BDbe2F0316DF893fd58CE46AA4d, 1, 0xD1D8C294e2e2d6f7Bd03Fa3503BE84d939E0a85f)...
+Pending https://sepolia.arbiscan.io/tx/0x2932896ff7032fbda72ea035a7bdf11b5ad40fba32ba4671bcc5edd42bec6152 (waiting 1 blocks for confirmation)
+Pending https://sepolia.arbiscan.io/tx/0xfda6bd95dd427f1ed90cfc4d6e80d4f9427b44d9551077ba340b6494374616ce (waiting 1 blocks for confirmation)
+Deploying TransparentUpgradeableProxy on arbitrumsepolia with constructor args (0xAf8986909652C45556B4699B01BfFd2A6D9D4ae0, 0x2f6Da0e5f6d2007C9E318F16b0c6299ACc3dD9b6, 0xc0c53b8b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000123506a8918524e90be7e5fdfbab09467436350a000000000000000000000000feb8e9daa0b52d3d0a4615098c3a2fb0c55f13ed)...
+Pending https://sepolia.arbiscan.io/tx/0x81ea1d1ee643c96dc35efad321dcca9501a8ff44ab6128834de6f4e2a19996af (waiting 1 blocks for confirmation)
+Successfully deployed contracts on arbitrumsepolia
+Pending https://explorer.testnet.pruv.network/tx/0x06ef56140c43f2ca5674370138e910c3b5e242ccbc8f66763858c0e2f81f80e8 (waiting 1 blocks for confirmation)
+Pending https://sepolia.arbiscan.io/tx/0x21c5062c5c69ea2fad20cc4a4cc3763e2e92dfb8b464cafec9d93cd1aa5eeef2 (waiting 1 blocks for confirmation)
+Pending https://sepolia.etherscan.io/tx/0x295734c875c518f5ce80a6b1f87f1873a23ebd8d644a829c1a3f37116779b6eb (waiting 1 blocks for confirmation)
+Pending https://explorer.testnet.pruv.network/tx/0x90f1775e5056d3b9641ebd6e9e7aa0d1606dd3d37c1f1ad1b53691248368685e (waiting 1 blocks for confirmation)
+Pending https://sepolia.etherscan.io/tx/0x4765af029f844b89823d3353e066afc242387921e28afdf6b1326acc4c7a7a63 (waiting 1 blocks for confirmation)
+Pending https://sepolia.arbiscan.io/tx/0xb0c9573844ad5ecb0f094c0ec56d1447a91e912b500d6f50a604bcacebce9223 (waiting 1 blocks for confirmation)
+Pending https://explorer.testnet.pruv.network/tx/0x3f470eb0e88ec7424213e31c808f9ca4e257dbd0d83bc6b675da9c76f8def8d6 (waiting 1 blocks for confirmation)
+Pending https://sepolia.etherscan.io/tx/0x5bd7b56e5ea83da62513df7452ada489d866fe48679f52dc424daa25f447aa34 (waiting 1 blocks for confirmation)
+Pending https://sepolia.arbiscan.io/tx/0xc5aca921fd37030a91d98d7e234bda0506b14267e715fad814b4bc640c327ee2 (waiting 1 blocks for confirmation)
+✅ Warp contract deployments complete
+Writing deployment artifacts...
+Skipping adding warp route at github registry
+Now adding warp route at filesystem registry at /Users/sr.productmanager/.hyperlane
+Done adding warp route at filesystem registry
+    tokens:
+      - chainName: pruvtest
+        standard: EvmHypCollateralFiat
+        decimals: 6
+        symbol: USDC
+        name: USDC
+        addressOrDenom: "0x75a64D1b7Ff4eCdeE7FB9bbf8A85694ff4ba5d39"
+        collateralAddressOrDenom: "0xeCacC484026a02022565496E088CA0581cC36373"
+        connections:
+          - token: ethereum|sepolia|0x3bC0A5ea5e169359F960E47210e6439f25bDAA21
+          - token: ethereum|arbitrumsepolia|0x2F5F1e0541aec989B61C7903cbFfc37C154ED779
+      - chainName: sepolia
+        standard: EvmHypCollateral
+        decimals: 6
+        symbol: USDC
+        name: USDC
+        addressOrDenom: "0x3bC0A5ea5e169359F960E47210e6439f25bDAA21"
+        collateralAddressOrDenom: "0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238"
+        connections:
+          - token: ethereum|pruvtest|0x75a64D1b7Ff4eCdeE7FB9bbf8A85694ff4ba5d39
+          - token: ethereum|arbitrumsepolia|0x2F5F1e0541aec989B61C7903cbFfc37C154ED779
+      - chainName: arbitrumsepolia
+        standard: EvmHypCollateral
+        decimals: 6
+        symbol: USDC
+        name: USDC
+        addressOrDenom: "0x2F5F1e0541aec989B61C7903cbFfc37C154ED779"
+        collateralAddressOrDenom: "0x75faf114eafb1BDbe2F0316DF893fd58CE46AA4d"
+        connections:
+          - token: ethereum|pruvtest|0x75a64D1b7Ff4eCdeE7FB9bbf8A85694ff4ba5d39
+          - token: ethereum|sepolia|0x3bC0A5ea5e169359F960E47210e6439f25bDAA21
+    
+⛽️ Gas Usage Statistics
+	- Gas required for warp deploy on pruvtest: 0.0 PRUV
+	- Gas required for warp deploy on sepolia: 0.000005379456249893 ETH
+	- Gas required for warp deploy on arbitrumsepolia: 0.0005308862 ETH

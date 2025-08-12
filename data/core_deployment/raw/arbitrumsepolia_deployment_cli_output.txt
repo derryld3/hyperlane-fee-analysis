@@ -1,0 +1,110 @@
+Hyperlane CLI
+{"level":30,"time":1754923881680,"pid":2047,"msg":"Your CLI version: 12.3.0, latest version: 16.2.0"}
+Hyperlane Core deployment
+_________________________
+
+Deployment plan
+===============
+Transaction signer and owner of new contracts: 0xFeb8E9Daa0b52D3D0A4615098C3A2FB0c55F13ED
+Deploying core contracts to network: arbitrumsepolia
+┌────────────────────────┬─────────────────────────────────────┐
+│ (index)                │ Values                              │
+├────────────────────────┼─────────────────────────────────────┤
+│ Name                   │ 'arbitrumsepolia'                   │
+│ Display Name           │ 'Arbitrum Sepolia'                  │
+│ Chain ID               │ 421614                              │
+│ Domain ID              │ 421614                              │
+│ Protocol               │ 'ethereum'                          │
+│ JSON RPC URL           │ 'https://arbitrum-sepolia.drpc.org' │
+│ Native Token: Symbol   │ 'ETH'                               │
+│ Native Token: Name     │ 'Ether'                             │
+│ Native Token: Decimals │ 18                                  │
+└────────────────────────┴─────────────────────────────────────┘
+Note: There are several contracts required for each chain, but contracts in your provided registries will be skipped.
+Running pre-flight checks for chains...
+✅ Arbitrum Sepolia signer is valid
+✅ Chains are valid
+✅ Balances are sufficient
+🚀 All systems ready, captain! Beginning deployment...
+Deploying to arbitrumsepolia from https://sepolia.arbiscan.io/address/0xFeb8E9Daa0b52D3D0A4615098C3A2FB0c55F13ED
+Deploying staticMerkleRootMultisigIsmFactory on arbitrumsepolia with constructor args ()...
+Pending https://sepolia.arbiscan.io/tx/0xbb74891d00f3e93ac7265a93efbd6d3bd0297848a00f04a0a95084cb8e7cdb6e (waiting 1 blocks for confirmation)
+Deploying staticMessageIdMultisigIsmFactory on arbitrumsepolia with constructor args ()...
+Pending https://sepolia.arbiscan.io/tx/0x7e25ac054a1cb0d73980f0b3449b2a175b8a6f37fb748c162a069f8943cd35fd (waiting 1 blocks for confirmation)
+Deploying staticAggregationIsmFactory on arbitrumsepolia with constructor args ()...
+Pending https://sepolia.arbiscan.io/tx/0x1ea32b7a6889830996b27bdbec3106a7663d51c8803b617984ba34a83a217440 (waiting 1 blocks for confirmation)
+Deploying staticAggregationHookFactory on arbitrumsepolia with constructor args ()...
+Pending https://sepolia.arbiscan.io/tx/0x835426cedc197cb258718d28e06b6eef41449e9a3e6c9c34450e242497b7b0fb (waiting 1 blocks for confirmation)
+Deploying domainRoutingIsmFactory on arbitrumsepolia with constructor args ()...
+Pending https://sepolia.arbiscan.io/tx/0x9d8f66d9af5edeae5cbaeb61dc304d9bc7e3c468fae1e70e4cafa604bb032396 (waiting 1 blocks for confirmation)
+Deploying staticMerkleRootWeightedMultisigIsmFactory on arbitrumsepolia with constructor args ()...
+Pending https://sepolia.arbiscan.io/tx/0xea25b8a90014695a1a09787ae25f005fe8b72a846506763e3628a917847b2622 (waiting 1 blocks for confirmation)
+Deploying staticMessageIdWeightedMultisigIsmFactory on arbitrumsepolia with constructor args ()...
+Pending https://sepolia.arbiscan.io/tx/0xa095444c6fbed7e2bf45e09d32c2b5e01d6f68a3e547d29ccb619e079694c54d (waiting 1 blocks for confirmation)
+Successfully deployed contracts on arbitrumsepolia
+Deploying proxyAdmin on arbitrumsepolia with constructor args ()...
+Pending https://sepolia.arbiscan.io/tx/0x667889e40970f5f416c6cc9aa0a83ec9236083bad724ab141070792b39ffec6d (waiting 1 blocks for confirmation)
+Deploying mailbox on arbitrumsepolia with constructor args (421614)...
+Pending https://sepolia.arbiscan.io/tx/0xfa9d927a04c6e456dc41098424f21f1d3b93290cb3b796fcc6dfbcb77dde0f98 (waiting 1 blocks for confirmation)
+Deploying TransparentUpgradeableProxy on arbitrumsepolia with constructor args (0xafbb3892Ee5833Ef8ad869dc12b62A9f83EF16Aa, 0x0556697823e4892E892e4fA108F928CDa609AF50, 0x)...
+Pending https://sepolia.arbiscan.io/tx/0x943c397c3efc88a05afebb5155382e74ce7d4c09c65adaa9f36b34752f0f8572 (waiting 1 blocks for confirmation)
+Pending https://sepolia.arbiscan.io/tx/0xffbb3f40730909c920839d02ecd167a63577088499a76ef2e282ddaa3c5172b8 (waiting 1 blocks for confirmation)
+Deploying merkleTreeHook on arbitrumsepolia with constructor args (0xD1D8C294e2e2d6f7Bd03Fa3503BE84d939E0a85f)...
+Pending https://sepolia.arbiscan.io/tx/0xea7512fd1190e798ab0f267b1f2b21b5415f719dec9a84701cfcee92d34bec37 (waiting 1 blocks for confirmation)
+Deploying storageGasOracle on arbitrumsepolia with constructor args ()...
+Pending https://sepolia.arbiscan.io/tx/0xa4c64a1fb20e72f54b3c0e8a814dece318d685ffbc9e189e1c8da22b1f9e8d70 (waiting 1 blocks for confirmation)
+Configuring gas oracle from arbitrumsepolia...
+arbitrumsepolia -> arbitrumsepolia: Exchange rate: 1.2 (new), Gas price: 0.1 gwei (new), Product diff: new
+arbitrumsepolia -> arbitrumsepolia: 125000 remote gas cost: 0.000015
+arbitrumsepolia -> sepolia: Exchange rate: 1.2 (new), Gas price: 0.01 gwei (new), Product diff: new
+arbitrumsepolia -> sepolia: 125000 remote gas cost: 0.0000015
+Skipping gas oracle arbitrumsepolia -> seaseedtest. Expected if the remote is a non-EVM chain.
+Pending https://sepolia.arbiscan.io/tx/0xf7cb82c90eac60d1348526e39a7dca5bbce8c4f4c3005b3315ad01eb11b54c74 (waiting 1 blocks for confirmation)
+Deploying interchainGasPaymaster on arbitrumsepolia with constructor args ()...
+Pending https://sepolia.arbiscan.io/tx/0x77cc4124655b82dcefac40ee2fee504c529b34cdec8c5b401347af45f23f0405 (waiting 1 blocks for confirmation)
+Pending https://sepolia.arbiscan.io/tx/0x20b5fd7489a6b4ed2dcecad70292df44e960a390718c22d72e0a743b9c773643 (waiting 1 blocks for confirmation)
+Deploying TransparentUpgradeableProxy on arbitrumsepolia with constructor args (0xa24640F629932e8F980Da6B3F8Ff48248d0aA068, 0x0556697823e4892E892e4fA108F928CDa609AF50, 0x485cc955000000000000000000000000feb8e9daa0b52d3d0a4615098c3a2fb0c55f13ed00000000000000000000000088b90d085daf288c295bd3a6057b086bea1c95e9)...
+Pending https://sepolia.arbiscan.io/tx/0x478bc8e2252a2f721949350548a40908538aeb0d8496bfc76432cc87d0a63628 (waiting 1 blocks for confirmation)
+Skipping overhead arbitrumsepolia -> seaseedtest. Expected if the remote is a non-EVM chain.
+Pending https://sepolia.arbiscan.io/tx/0x282bc37874bf101f73a43e4b27f83e8bf879350fb75fa3219cfb119a2e4c39cc (waiting 1 blocks for confirmation)
+Pending https://sepolia.arbiscan.io/tx/0x8f9f399bafefdd1a5de3f92f012a57ae8ee80390e0e3b9dc213fa465689aa296 (waiting 1 blocks for confirmation)
+Pending https://sepolia.arbiscan.io/tx/0x37429c7abf1c78373bb3050d98a21d5f0d375cd07e45c1ae323137878b2a74d0 (waiting 1 blocks for confirmation)
+Pending https://sepolia.arbiscan.io/tx/0xe091553a3112ed72379056867f7d3e27f2c6fe84182998eab56ca4c46e159ab9 (waiting 1 blocks for confirmation)
+Pending https://sepolia.arbiscan.io/tx/0x206ff881b2e0503f2c732a648e6500d1d3646cdc663f473ba3f79c83c386ebb8 (waiting 1 blocks for confirmation)
+Deploying interchainAccountIsm on arbitrumsepolia with constructor args (0xD1D8C294e2e2d6f7Bd03Fa3503BE84d939E0a85f)...
+Pending https://sepolia.arbiscan.io/tx/0xaa997479e503dff9d29242add6ac2a49d1fd0103a88610236e2e1e17912128be (waiting 1 blocks for confirmation)
+Deploying proxyAdmin on arbitrumsepolia with constructor args ()...
+Pending https://sepolia.arbiscan.io/tx/0x9badc27e3f5e02efeb5427ec64d8ad48cf9a965dd209caf6dd8a9adaae9d3dd5 (waiting 1 blocks for confirmation)
+Deploying interchainAccountRouter on arbitrumsepolia with constructor args (0xD1D8C294e2e2d6f7Bd03Fa3503BE84d939E0a85f)...
+Pending https://sepolia.arbiscan.io/tx/0xdf5c3be7bf1aaf8e45eb9ca283b6bb027b59cdd6b469a55c880a3d6c8ae80387 (waiting 1 blocks for confirmation)
+Pending https://sepolia.arbiscan.io/tx/0x1778d20b73b0c036beb9ec4929fad20f515d1a8e37fb95be60f884061602c865 (waiting 1 blocks for confirmation)
+Deploying TransparentUpgradeableProxy on arbitrumsepolia with constructor args (0x84e42f8Bc9603c488B242b59341BfC426bcb2740, 0xC18eC9859Abfde6C6f7CE15dBDcED5dCBD6d7134, 0xc0c53b8b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000001ce7051eb0e75e07e622699e93b3f7b6ae6f06f7000000000000000000000000feb8e9daa0b52d3d0a4615098c3a2fb0c55f13ed)...
+Pending https://sepolia.arbiscan.io/tx/0xa8dcffc30ee8f36f320f4ca15424b6196117b070be9d068f7c37e31debba92a1 (waiting 1 blocks for confirmation)
+Deploying validatorAnnounce on arbitrumsepolia with constructor args (0xD1D8C294e2e2d6f7Bd03Fa3503BE84d939E0a85f)...
+Pending https://sepolia.arbiscan.io/tx/0x4f16d11253b1073bf16142bf2194d1d67886e4e43a1011de66234c155395a5d3 (waiting 1 blocks for confirmation)
+Deploying testRecipient on arbitrumsepolia with constructor args ()...
+Pending https://sepolia.arbiscan.io/tx/0x36cca0cfc8f94509be9446b1ae1a6572bb6bf16f85f082db1d5d6ea30ea41657 (waiting 1 blocks for confirmation)
+Sent tx 0x0a2f5b19516bfdc263691467a8547f798b304599682d2952d2a960db630676a4
+Pending https://sepolia.arbiscan.io/tx/0x0a2f5b19516bfdc263691467a8547f798b304599682d2952d2a960db630676a4 (waiting 1 blocks for confirmation)
+⛽️ Gas Usage Statistics
+	- Gas required for core deploy on arbitrumsepolia: 0.0026639196 ETH
+Skipping updating chain arbitrumsepolia at github registry
+Now updating chain arbitrumsepolia at filesystem registry at /Users/sr.productmanager/.hyperlane
+Done updating chain arbitrumsepolia at filesystem registry
+✅ Core contract deployments complete:
+
+    staticMerkleRootMultisigIsmFactory: "0x5d23Ff93466e5382991FEC406CC665B32180B7C8"
+    staticMessageIdMultisigIsmFactory: "0x4D559e873aA70a23879E0E8df4CCB94E2bfe4ca1"
+    staticAggregationIsmFactory: "0xE5b0bBD18eC9F8Bc5fb05e0fde86d8B7E6C2A427"
+    staticAggregationHookFactory: "0x7205E9318CAFf63BD00529eE95B59bD518d5D828"
+    domainRoutingIsmFactory: "0x20C0D27D1Bffef859726585b5f854bdD1d26F10b"
+    staticMerkleRootWeightedMultisigIsmFactory: "0x12e7CBA0E66F7B0635f66e83D0d0dCD79bA2CFF1"
+    staticMessageIdWeightedMultisigIsmFactory: "0x7D8Dd50e3Eb8f7Bd6e0C4077Db81FD7c32e9D8c3"
+    proxyAdmin: "0x0556697823e4892E892e4fA108F928CDa609AF50"
+    mailbox: "0xD1D8C294e2e2d6f7Bd03Fa3503BE84d939E0a85f"
+    interchainAccountRouter: "0xdC794c3EFd5915b3a87Ee0a3243db76fd13CD64D"
+    interchainAccountIsm: "0x1CE7051eB0E75e07e622699e93B3f7B6AE6F06f7"
+    validatorAnnounce: "0x9D421b429B832D85c76fC7e9574131B59EC45Ab9"
+    testRecipient: "0x7a0BdF9da453b43a0C808a1fD4999C16c3fB2b88"
+    merkleTreeHook: "0x38fF1bdA1d447352d1fAa4653D8325e1dC419079"
+    interchainGasPaymaster: "0xA9A1FbFCD86bb04ef515AE9CBDB979341fd348A9"
