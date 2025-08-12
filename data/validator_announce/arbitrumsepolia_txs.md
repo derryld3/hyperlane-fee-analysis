@@ -1,0 +1,1 @@
+curl -s "https://arbitrum-sepolia.blockscout.com/api/v2/addresses/0x43d8f435488505EC875a46ADda70f81769dF8272/transactions" -H "Accept: application/json" > arbitrumsepolia_txs.json

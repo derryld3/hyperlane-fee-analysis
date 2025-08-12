@@ -1,0 +1,1 @@
+curl -s "https://eth-sepolia.blockscout.com/api/v2/addresses/0xCc77Dba78C966f069261892b6D139eC65283f385/transactions" -H "Accept: application/json" > sepolia_txs.json
